@@ -35,6 +35,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 const webpack = require('webpack');
 
 exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
+  
+  
   const config = {
     plugins: [
       new webpack.ProvidePlugin({
